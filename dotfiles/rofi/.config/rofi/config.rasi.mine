@@ -1,0 +1,93 @@
+configuration{
+	modes: [window,drun,run,ssh];
+	font: "FiraCode 13";
+	show-icons: true;
+	display-drun: "Applications";
+	sidebar-mode: true;
+	fixed-num-lines:true;
+}
+
+*{
+	bg-one: #3c3836;
+	bg-zero: #282828;
+	fg-zero: #fbf1c7;
+	fg-four: #a89984;
+	dark-green: #b8bb26;
+	light-orange: #fe8019;
+	light-yellow: #d79921;
+	dark-yellow: #b57614;
+	background-color: transparent;
+}
+
+window{
+	height: 400;
+	width: 600;
+  border-radius: 5;
+}
+
+mainbox {
+    spacing: 0;
+    children: [inputbar, message, listview];
+}
+
+
+listview{
+	padding: 8;
+	background-color: @bg-zero;
+	dynamic: false;
+}
+
+inputbar{
+	color: @fg-four;
+	padding: 14;
+	background-color: @bg-zero;
+	border-radius: 5;
+}
+
+text-box{
+	text-color:@fg-four;
+}
+
+prompt {
+    margin: 0 10 0 0;
+}
+
+entry, prompt, case-indicator {
+    text-color: inherit;
+}
+
+element{
+	padding: 5;
+	vertical-align: 0.5;
+	border-radius: 5;
+	text-color: @fg-four;
+	background-color: @fg-zero;
+
+}
+
+
+element.selected.normal {
+    background-color: @dark-green;
+}
+
+element.alternate.normal {
+    background-color: inherit;
+}
+
+element.normal.active, element.alternate.active {
+    background-color: @dark-yellow;
+}
+
+element.selected.active {
+    background-color: @dark-yellow;
+}
+
+element.normal.urgent, element.alternate.urgent {
+    background-color: @light-orange;
+}
+
+element.selected.urgent {
+    background-color: @dark-green;
+}
+
+

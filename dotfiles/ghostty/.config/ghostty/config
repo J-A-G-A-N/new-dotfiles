@@ -1,0 +1,30 @@
+##########################
+##  	Window rule
+##########################
+
+window-decoration = false
+
+##########################
+##  	Key binds
+##########################
+
+keybind=ctrl+shift+r=reload_config
+
+##########################
+##  	Shell	
+##########################
+
+shell-integration-features = no-cursor
+
+##########################
+##  Theme/ Color scheme	
+##########################
+
+theme = GruvboxDark
+
+##########################
+##  	Fonts	
+##########################
+font-family =  FiraCode Nerd Font Reg
+
+font-size = 8
